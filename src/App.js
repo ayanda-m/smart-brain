@@ -66,7 +66,7 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({ imageUrl: this.state.input });
-    fetch('https://kind-blue-coyote-wrap.cyclic.app/imageurl', {
+    fetch('https://delbbimjwicwniicjryv.supabase.co/imageurl', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
@@ -76,7 +76,7 @@ class App extends Component {
       .then(response => response.json())
       .then(response => {
         if (response) {
-          fetch('https://kind-blue-coyote-wrap.cyclic.app/image', {
+          fetch('https://delbbimjwicwniicjryv.supabase.co/image', {
             method: 'put',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
