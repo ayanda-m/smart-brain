@@ -23,7 +23,7 @@ class Register extends React.Component {
   }
 
   onSubmitSignIn = () => {
-    fetch('https://mybackend-bccx.onrender.com/register', {
+    fetch('https://kind-blue-coyote-wrap.cyclic.app/register', {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
